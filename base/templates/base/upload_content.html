@@ -1,0 +1,42 @@
+{% extends 'base/main.html' %}
+
+
+{% block content %}
+    <section id="content">
+        <div class="content-upload">
+            <div class="content-title">
+                <h1>Gallery Content Upload</h1>
+            </div>
+            <hr>
+            <a href="{% url 'gallery_content_image' %}" id="upload">Upload images to Gallery</a>
+            
+        </div>
+        
+
+        <div class="content-upload">
+            <div class="content-title">
+                <h1>Website Header Images</h1>
+                <p>Ideal Size: 2000px x 800px</p>
+            </div>
+            
+            <hr>
+
+            
+            {% for i in headline_images %}
+            <div class="image-div">
+                <img src="{{i.image.url}}" alt="headline-image">
+                <p>Uploaded - {{i.created |date:"M d, Y" }}</p>
+                <a href=""><i class="fa-solid fa-trash"></i></a>
+            </div>
+            <hr>
+            {% endfor %}
+            <a href="{% url 'upload_headline_image' %}" id="upload">Add Image</a>
+        </div>
+        
+        
+    </section>
+    
+
+
+    
+{% endblock %}

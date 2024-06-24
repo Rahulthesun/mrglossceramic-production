@@ -1,0 +1,33 @@
+{% extends 'base/main.html' %}
+
+{% block content %}
+    {% include 'base/header.html' %}
+    <section id="content">
+        <div class="gallery-div">
+
+            <div class="gallery-heading">
+                <h1>Gallery</h1>
+            </div>
+            <div class="gallery-type">
+                <a href="#" class="active">Images</a>
+                <a href="{% url 'video_gallery' %}">Video</a>
+            </div>
+            <div class="gallery-content-grid">
+                {% for i in images %}
+                <div class="gallery-image">
+                    <img src="{{i.image.url}}">
+                </div>
+
+                {% empty %}
+                    <p>No Images Uploaded To Gallery</p>
+                {% endfor %}
+
+                
+            </div>
+        </div>
+
+        
+        
+    </section>
+    {% include 'base/footer.html' %}
+{% endblock %}

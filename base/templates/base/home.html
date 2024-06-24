@@ -2,518 +2,420 @@
 
 {% block content %}
 
-<section id="topbar">
-    <div class="mobile-topbar">
-        <h1>CALL US</h1>
-        <h2>+91 080 4803 8653</h2>
-        <div class="mobile-icons">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-regular fa-envelope"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+{% include 'base/header.html' %}
+
+<body>
+    <section id="headline">
+        <div class="desktop-headline-image-carousel" id="headline-image-carousel">
+            {% for i in images %}
+                <img src="{{ i.image.url }}" id="image{{ forloop.counter }}" class="{% if forloop.first %}active{% endif %}">
+            {% endfor %}
+            
         </div>
-        <div class="topbar-links">
-            <a href=""><p>Book Service</p></a>
-            <a href=""><p>Apply For Franchise</p></a>     
-        </div>
-    </div>
-
-    <div class="desktop-topbar">
-        <div class="call-info">
-            <h1>CALL US <span id="phone">+91 080 4803 8653</span></h1>
-        </div>
-        <div class="desktop-icons">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-regular fa-envelope"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="desktop-topbar-links">
-            <a href=""><p>Book Service</p></a>
-            <a href=""><p>Apply For Franchise</p></a>     
-        </div>
-    </div>
-    <hr>
-</section>
-
-<section id="navbar">
-    <div class="mobile-navbar">
-        <a href="#"> <img src="https://fplogoimages.withfloats.com/actual/63a9726988733e0001ed61d0.jpg"></a>
-       
-        <a href="#"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></a>
-        
-    </div>
-
-    <div class="desktop-navbar">
-        <div class="logo">
-            <a href="#"> <img src="https://fplogoimages.withfloats.com/actual/63a9726988733e0001ed61d0.jpg"></a>
-        </div>
-        
-       <div class="desktop-navbar-links">
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Services</a>
-        <a href="#">Franchise</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
-       </div>
-        
-        
-    </div>
-</section>
-
-
-<section id="headline">
-    <div class="desktop-headline-image-carousel">
-        <img id="desktop-img" src="https://i.ibb.co/2Shs1Lk/Untitled-design-16.png">
-    </div>
-
-    <div class="mobile-headline-image-carousel">
-        <img id="mobile-img" src="https://i.ibb.co/QXQ1zpg/5.png">
-    </div>
-
-    <div class="content-box">
-        <h1>Mr.Gloss</h1>
-        <h2>Ceramic Coating</h2>
-        <img src="https://i.ibb.co/dWGV6Zs/Untitled-design-8.png">
-        <p class="content">Welcome to <b>Mr.Gloss Ceramic Coating</b>: Your Ultimate Car Care Destination. At Mr.Gloss, we believe that <b>"Perfection is in the Details."</b> As the go-to destination for car detailing, our skilled team at Mr.Gloss turns your vehicle into a masterpiece. With dedication and precision, we tackle tough stains and make cars shine like new. Our extensive range of car care products, including <b>Ceramic Coating, Paint Protection Film,</b> and more, can be tailored to meet your vehicle's specific needs. At MrGloss, we strive to exceed your expectations with every detail.</p>
-    </div>
-
-    <div class="desktop-headline">
-        <h1>Mr.Gloss </h1>
-        <h2>Ceramic Coating</h2>
-    </div>
-
     
-
-    <div class="desktop-content-box">
-        <div class="text-flex">
+    
+        <div class="content-box">
+            <h1>Mr. Gloss</h1>
+            <h2>Ceramic Coating</h2>
+            <img src="https://i.ibb.co/dWGV6Zs/Untitled-design-8.png">
             <p class="content">Welcome to <b>Mr.Gloss Ceramic Coating</b>: Your Ultimate Car Care Destination. At Mr.Gloss, we believe that <b>"Perfection is in the Details."</b> As the go-to destination for car detailing, our skilled team at Mr.Gloss turns your vehicle into a masterpiece. With dedication and precision, we tackle tough stains and make cars shine like new. Our extensive range of car care products, including <b>Ceramic Coating, Paint Protection Film,</b> and more, can be tailored to meet your vehicle's specific needs. At MrGloss, we strive to exceed your expectations with every detail.</p>
-        </div>  
-        <div class="audir8">
-            <img src="https://i.ibb.co/54ZRVZf/Untitled-design-13.png">
+        </div>
+    
+        <div class="desktop-headline">
+            <h1>Mr. Gloss</h1>
+            <h2>Ceramic Coating</h2>
+        </div>
+    
+        
+    
+        <div class="desktop-content-box">
+            <div class="text-flex">
+                <p class="content">Welcome to <b>Mr.Gloss Ceramic Coating</b>: Your Ultimate Car Care Destination. At Mr.Gloss, we believe that <b>"Perfection is in the Details."</b> As the go-to destination for car detailing, our skilled team at Mr.Gloss turns your vehicle into a masterpiece. With dedication and precision, we tackle tough stains and make cars shine like new. Our extensive range of car care products, including <b>Ceramic Coating, Paint Protection Film,</b> and more, can be tailored to meet your vehicle's specific needs. At MrGloss, we strive to exceed your expectations with every detail.</p>
+            </div>  
+            <div class="audir8">
+                <img src="https://i.ibb.co/54ZRVZf/Untitled-design-13.png">
+            </div>
+            
+            
+            
+        </div>
+    
+        <a href=""><button>Know More</button></a>
+        
+        
+            
+    </section>
+    
+    
+    <section id="aim">
+    
+        <div class="aim-mobile-headline">
+            <h1>Our Aim?</h1>
+            <h2>Superior Detailing!</h2>
+        </div>   
+    
+        <div class="aim-desktop-headline">
+            <h1>Our Aim?</h1>
+            <h2>Superior Detailing!</h2>
+        </div>   
+    
+        
+        <div class="aim-desktop-content-box">
+            <div class="lambo">
+                <img src="https://i.ibb.co/gr4qrJR/Untitled-design-27.png">
+            </div>
+            <div class="text-flex">
+                <p>At <b>Mr.Gloss Ceramic Coating</b>, we're dedicated to transforming your car from "good" to "wow, is this really my car?" Our <b>commitment</b> to top-notch detailing ensures no compromise on quality, as we offer expert advice tailored to your needs. Just leave your car with us and let our skilled technicians work their magic. We pay attention to every detail, eliminating even the tiniest imperfections to give your vehicle a stunning look. Get ready to be amazed by the results of our <b>detailing service </b>and Get ready to turn heads!</p>
+            </div>
+        </div>
+        <div class="aim-desktop-endline">
+            <h3>Get ready to turn heads!</h3>
         </div>
         
-        
-        
-    </div>
-
-    <a href=""><button>Know More</button></a>
     
     
-        
-</section>
-
-
-<section id="aim">
-
-    <div class="aim-mobile-headline">
-        <h1>Our Aim?</h1>
-        <h2>Superior Detailing!</h2>
-    </div>   
-
-    <div class="aim-desktop-headline">
-        <h1>Our Aim?</h1>
-        <h2>Superior Detailing!</h2>
-    </div>   
-
-    
-    <div class="aim-desktop-content-box">
-        <div class="lambo">
-            <img src="https://i.ibb.co/871xHVg/Untitled-design-15.png">
-        </div>
-        <div class="text-flex">
+        <div class="aim-mobile-content">
+            <img src="https://i.ibb.co/gr4qrJR/Untitled-design-27.png">
             <p>At <b>Mr.Gloss Ceramic Coating</b>, we're dedicated to transforming your car from "good" to "wow, is this really my car?" Our <b>commitment</b> to top-notch detailing ensures no compromise on quality, as we offer expert advice tailored to your needs. Just leave your car with us and let our skilled technicians work their magic. We pay attention to every detail, eliminating even the tiniest imperfections to give your vehicle a stunning look. Get ready to be amazed by the results of our <b>detailing service </b>and Get ready to turn heads!</p>
-        </div>
-    </div>
-    <div class="aim-desktop-endline">
-        <h3>Get ready to turn heads!</h3>
-    </div>
-    
-
-
-    <div class="aim-mobile-content">
-        <img src="https://i.ibb.co/QX0xXRr/html-images.png">
-        <p>At <b>Mr.Gloss Ceramic Coating</b>, we're dedicated to transforming your car from "good" to "wow, is this really my car?" Our <b>commitment</b> to top-notch detailing ensures no compromise on quality, as we offer expert advice tailored to your needs. Just leave your car with us and let our skilled technicians work their magic. We pay attention to every detail, eliminating even the tiniest imperfections to give your vehicle a stunning look. Get ready to be amazed by the results of our <b>detailing service </b>and Get ready to turn heads!</p>
-        <h3>Get ready to turn heads!</h3>
-    </div>
-    
-    
-</section>
-
-
-<section id="services">
-    <div class="content-box" id="service-box">
-        <div class="service-headline">
-            <h1>Discover  Our</h1>
-            <h1 class="underline"><span id="underline">Services</span></h1>
+            <h3>Get ready to turn heads!</h3>
         </div>
         
-        <div class="services-image-carousel">
+        
+    </section>
+    
+    
+    <section id="services">
+        <div class="content-box" id="service-box">
+            <div class="service-headline">
+                <h1>Discover  Our</h1>
+                <h1 class="underline"><span id="underline">Services</span></h1>
+            </div>
+            
+            <div class="services-image-carousel">
+                <div class="carousel-container">
+    
+                    <div class="carousel-item">
+                        <div class="mobile-image-container">
+                            <img src="https://i.ibb.co/mJQBMRW/4.png">
+                        </div>
+                        <div class="item-text">
+                            <h3>Ceramic Coating</h3>
+                            <p>At MrGloss Ceramic Coating, we elevate car care with our advanced ceramic coating solution. This protective layer not only enhances your vehicle's appearance but also shields it from environmental damage, UV rays, and minor scratches. With our ceramic coating, your car will maintain its showroom shine for longer, requiring minimal maintenance. Experience the difference with MrGloss Ceramic Coating and enjoy a car that turns heads wherever you go.</p>
+                        </div>
+                    </div>
+                    <a href=""><button>Know More</button></a>
+    
+                    <div class="carousel-item">
+                        <div class="mobile-image-container">
+                            <img src="https://i.ibb.co/gyjM2ZN/2.png">
+                        </div>
+                        <div class="item-text">
+                            <h3>Car Wash & Detailing</h3>
+                            <p>Our skilled team uses the best products and techniques to give your car a thorough, gentle clean. We offer a full range of services, from exterior washes that bring back your car's shine to detailed interior cleaning. With MrGloss, your car will look great and be protected from environmental damage. Trust MrGloss Car Wash & Detailing for the best in car care, where your satisfaction comes first.</p>
+                        </div>
+                    </div>
+                    <a href=""><button>Know More</button></a>
+                    
+    
+                    <div class="carousel-item">
+                        <div class="mobile-image-container">
+                            <img src="https://i.ibb.co/jD9Vnxg/3.png">
+                        </div>
+                        <div class="item-text">
+                            <h3>Scratch Removal & Painting</h3>
+                            <p>Experience our comprehensive car painting and scratch removal services at MrGloss . Our team restores your vehicle's shine with precise scratch and dent repair, ensuring every imperfection is meticulously addressed. Whether you require scratch removal or a fresh coat of paint, trust MrGloss to enhance your car's appearance and protect its value. Enjoy professional care and exceptional results with us, where your satisfaction is always our top priority.</p>
+                        </div>
+                    </div>
+                    <a href=""><button>Know More</button></a>
+    
+                    <div class="carousel-item">
+                        <div class="mobile-image-container">
+                            <img src="https://i.ibb.co/T0VpGqT/1.png">
+                        </div>
+                        <div class="item-text">
+                            <h3>Paint Protection Film (PPF)</h3>
+                            <p>At MrGloss , we specialize in premium Paint Protection Film (PPF) services using top branded films for durability and clarity. Our skilled technicians ensure precise installation to protect your car from chips, scratches, and environmental damage, preserving its value and appearance with unmatched care.</p>
+                        </div>
+                    </div>
+                    <a href=""><button>Know More</button></a>
+    
+                </div>         
+            </div>
+    
+    
+        </div>
+    
+        <div class="desktop-service-box" id="service-box">
+            <div class="desktop-service-headline">
+                <h1>Discover  Our</h1>
+                <h1 class="underline"><span id="underline">Services</span></h1>
+            </div>
+            
+            <div class="desktop-image-carousel">
+                <div class="desktop-carousel-container">
+    
+                    <div class="desktop-carousel-item">
+                        <div class="desktop-image-container">
+                            <img src="https://i.ibb.co/mJQBMRW/4.png">
+                        </div>
+                        <div class="desktop-item-text">
+                            <h3>Ceramic Coating</h3>
+                            <p>At MrGloss Ceramic Coating, we elevate car care with our advanced ceramic coating solution. This protective layer not only enhances your vehicle's appearance but also shields it from environmental damage, UV rays, and minor scratches. With our ceramic coating, your car will maintain its showroom shine for longer, requiring minimal maintenance. Experience the difference with MrGloss Ceramic Coating and enjoy a car that turns heads wherever you go.</p>
+                            <a href=""><button>Know More</button></a>
+                        </div>
+                        
+                    </div>
+                   
+    
+                    <div class="desktop-carousel-item">
+                        <div class="desktop-image-container">
+                            <img src="https://i.ibb.co/gyjM2ZN/2.png">
+                        </div>
+                        <div class="desktop-item-text">
+                            <h3>Car Wash & Detailing</h3>
+                            <p>Our skilled team uses the best products and techniques to give your car a thorough, gentle clean. We offer a full range of services, from exterior washes that bring back your car's shine to detailed interior cleaning. With MrGloss, your car will look great and be protected from environmental damage. Trust MrGloss Car Wash & Detailing for the best in car care, where your satisfaction comes first.</p>
+                            <a href=""><button>Know More</button></a>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="desktop-carousel-item">
+                        <div class="desktop-image-container">
+                            <img src="https://i.ibb.co/jD9Vnxg/3.png">
+                        </div>
+                        <div class="desktop-item-text">
+                            <h3>Scratch Removal & Painting</h3>
+                            <p>Experience our comprehensive car painting and scratch removal services at MrGloss . Our team restores your vehicle's shine with precise scratch and dent repair, ensuring every imperfection is meticulously addressed. Whether you require scratch removal or a fresh coat of paint, trust MrGloss to enhance your car's appearance and protect its value. Enjoy professional care and exceptional results with us, where your satisfaction is always our top priority.</p>
+                            <a href=""><button>Know More</button></a>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="desktop-carousel-item">
+                        <div class="desktop-image-container">
+                            <img src="https://i.ibb.co/T0VpGqT/1.png">
+                        </div>
+                        <div class="desktop-item-text">
+                            <h3>Paint Protection Film (PPF)</h3>
+                            <p>At MrGloss , we specialize in premium Paint Protection Film (PPF) services using top branded films for durability and clarity. Our skilled technicians ensure precise installation to protect your car from chips, scratches, and environmental damage, preserving its value and appearance with unmatched care.</p>
+                            <a href=""><button>Know More</button></a>
+                        </div>
+                        
+                    </div>
+                    
+        
+                </div>         
+            </div>
+    
+    
+        </div>
+       
+        
+    </section>
+    
+    <section id="why-us">
+        <h1 style="color: white;">Why Us ?</h1>
+    
+        <div class="desktop-why-container">
+            <div class="desktop-why-box">
+                <div class="desktop-why-box-content">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3048/3048316.png" class="why-img">
+                    <h2 class="why-heading">Best In-Class Equipment</h2>
+                    <p class="why-content">At MrGloss, we rely on the best detailing equipment to deliver exceptional results. Our top-notch tools and machinery are carefully chosen for their effectiveness, guaranteeing a flawless finish every time. Trust us to take care of your car with the finest equipment in the business.</p>
+                </div>  
+            </div>
+    
+            <div class="desktop-why-box">
+                <div class="desktop-why-box-content">
+                    <img src="https://png.pngtree.com/png-vector/20230310/ourmid/pngtree-cleaning-products-line-icon-vector-png-image_6642490.png">
+                    <h2 class="why-heading">Premium Products</h2>
+                    <p class="why-content">At MrGloss, quality is our top priority. That's why we've chosen premium detailing products from trusted brands like 3M. With these superior products, your car will receive the care it deserves, ensuring a stunning finish that lasts.</p>
+                </div>  
+            </div>
+    
+            <div class="desktop-why-box">
+                <div class="desktop-why-box-content">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkvUr_LHCmMJzElwROMP6LnTPgJR-pirTK4PFKGkP5ajgxZgL7" class="why-img">
+                    <h2 class="why-heading">Fully-Equipped Studio</h2>
+                    <p class="why-content">Our fully equipped studio ensures meticulous attention to detail for all your car care needs. With cutting-edge tools and technology, we deliver top-quality results every time, giving your vehicle the care it deserves.</p>
+                </div>  
+            </div>
+    
+            <div class="desktop-why-box">
+                <div class="desktop-why-box-content">
+                    <img src="https://t3.ftcdn.net/jpg/04/91/46/26/360_F_491462695_JgY0OD8nIiFib40OSgmMDDcA1rLNMgc2.jpg">
+                    <h2 class="why-heading">Quality-Driven Process</h2>
+                    <p class="why-content">At MrGloss Ceramic Coating, punctuality is key. We meticulously plan every job, offering accurate time estimates and consistent updates to our valued customers for smooth coordination. Our rigorous processes guarantee dependable and quality-focused car care services.</p>
+                </div>  
+            </div>
+    
+            
+    
+        </div>
+    
+    
+        <div class="mobile-why-container">
+            <div class="why-box-1">
+                <div class="why-box-content">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3048/3048316.png" class="why-img">
+                    <h2 class="why-heading">Best In-Class Equipment</h2>
+                    <p class="why-content">At MrGloss, we rely on the best detailing equipment to deliver exceptional results. Our top-notch tools and machinery are carefully chosen for their effectiveness, guaranteeing a flawless finish every time. Trust us to take care of your car with the finest equipment in the business.</p>
+                </div>  
+            </div>
+    
+            <div class="why-box-2">
+                <div class="why-box-content">
+                    <img src="https://png.pngtree.com/png-vector/20230310/ourmid/pngtree-cleaning-products-line-icon-vector-png-image_6642490.png">
+                    <h2 class="why-heading">Premium Products</h2>
+                    <p class="why-content">At MrGloss, quality is our top priority. That's why we've chosen premium detailing products from trusted brands like 3M. With these superior products, your car will receive the care it deserves, ensuring a stunning finish that lasts.</p>
+                </div>  
+            </div>
+    
+            <div class="why-box-3">
+                <div class="why-box-content">
+                    <img src="https://png.pngtree.com/png-vector/20230306/ourmid/pngtree-workflow-line-icon-vector-png-image_6634104.png">
+                    <h2 class="why-heading">Quality-Driven Process</h2>
+                    <p class="why-content">At MrGloss Ceramic Coating, punctuality is key. We meticulously plan every job, offering accurate time estimates and consistent updates to our valued customers for smooth coordination. Our rigorous processes guarantee dependable and quality-focused car care services.</p>
+                </div>  
+            </div>
+    
+            <div class="why-box-4">
+                <div class="why-box-content">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkvUr_LHCmMJzElwROMP6LnTPgJR-pirTK4PFKGkP5ajgxZgL7" class="why-img">
+                    <h2 class="why-heading">Fully-Equipped Studio</h2>
+                    <p class="why-content">Our fully equipped studio ensures meticulous attention to detail for all your car care needs. With cutting-edge tools and technology, we deliver top-quality results every time, giving your vehicle the care it deserves.</p>
+                </div>  
+            </div>
+    
+        </div>
+    
+    
+        
+    
+    </section>
+    
+    
+    <section id="products">
+    
+        <div class="content-box" id="product-box">
+            <div class="service-headline">
+                <h1>High Quality</h1>
+                <h1 class="underline"><span id="underline">Products</span></h1>
+            </div>
+        </div>
+        
+    
+        <div class="products-image-carousel">
             <div class="carousel-container">
-
+    
                 <div class="carousel-item">
                     <div class="mobile-image-container">
-                        <img src="https://i.ibb.co/mJQBMRW/4.png">
+                        <img src="https://i.ibb.co/9snxzDW/Untitled-design-28.png">
                     </div>
                     <div class="item-text">
-                        <h3>Ceramic Coating</h3>
-                        <p>At MrGloss Ceramic Coating, we elevate car care with our advanced ceramic coating solution. This protective layer not only enhances your vehicle's appearance but also shields it from environmental damage, UV rays, and minor scratches. With our ceramic coating, your car will maintain its showroom shine for longer, requiring minimal maintenance. Experience the difference with MrGloss Ceramic Coating and enjoy a car that turns heads wherever you go.</p>
+                        <h3>Graphene Coating</h3>
+                        <p>Graphene Coating is a premium product that offers superior protection and shine for your vehicle. Its advanced formula creates a durable, high-gloss layer, shielding your car from contaminants, UV rays, and wear. This coating enhances your car's appearance and makes cleaning easier, ensuring a long-lasting, showroom-quality finish.</p>
                     </div>
                 </div>
                 <a href=""><button>Know More</button></a>
-
+    
                 <div class="carousel-item">
                     <div class="mobile-image-container">
-                        <img src="https://i.ibb.co/gyjM2ZN/2.png">
+                        <img src="https://i.ibb.co/d5Q4Vhk/Untitled-design-20.png">
                     </div>
                     <div class="item-text">
-                        <h3>Car Wash & Detailing</h3>
-                        <p>At MrGloss Ceramic Coating, we elevate car care with our advanced ceramic coating solution. This protective layer not only enhances your vehicle's appearance but also shields it from environmental damage, UV rays, and minor scratches. With our ceramic coating, your car will maintain its showroom shine for longer, requiring minimal maintenance. Experience the difference with MrGloss Ceramic Coating and enjoy a car that turns heads wherever you go.</p>
+                        <h3>3M Ceramic Coating </h3>
+                            <p>3M Ceramic Coating is a premium product that provides superior protection and shine for your vehicle. Its advanced formula creates a durable, high-gloss layer, shielding your car from contaminants, UV rays, and wear. This coating enhances your car's appearance and makes cleaning easier, ensuring a long-lasting, showroom-quality finish.</p>
                     </div>
                 </div>
                 <a href=""><button>Know More</button></a>
-                
-
-                <div class="carousel-item">
-                    <div class="mobile-image-container">
-                        <img src="https://i.ibb.co/jD9Vnxg/3.png">
-                    </div>
-                    <div class="item-text">
-                        <h3>Scratch Removal & Painting</h3>
-                        <p>Experience our comprehensive car painting and scratch removal services at MrGloss . Our team restores your vehicle's shine with precise scratch and dent repair, ensuring every imperfection is meticulously addressed. Whether you require scratch removal or a fresh coat of paint, trust MrGloss to enhance your car's appearance and protect its value. Enjoy professional care and exceptional results with us, where your satisfaction is always our top priority.</p>
-                    </div>
-                </div>
-                <a href=""><button>Know More</button></a>
-
-                <div class="carousel-item">
-                    <div class="mobile-image-container">
-                        <img src="https://i.ibb.co/T0VpGqT/1.png">
-                    </div>
-                    <div class="item-text">
-                        <h3>Paint Protection Film (PPF)</h3>
-                        <p>At MrGloss , we specialize in premium Paint Protection Film (PPF) services using top branded films for durability and clarity. Our skilled technicians ensure precise installation to protect your car from chips, scratches, and environmental damage, preserving its value and appearance with unmatched care.</p>
-                    </div>
-                </div>
-                <a href=""><button>Know More</button></a>
-
-            </div>         
-        </div>
-
-
-    </div>
-
-    <div class="desktop-service-box" id="service-box">
-        <div class="desktop-service-headline">
-            <h1>Discover  Our</h1>
-            <h1 class="underline"><span id="underline">Services</span></h1>
-        </div>
-        
-        <div class="desktop-image-carousel">
-            <div class="desktop-carousel-container">
-
-                <div class="desktop-carousel-item">
-                    <div class="desktop-image-container">
-                        <img src="https://i.ibb.co/mJQBMRW/4.png">
-                    </div>
-                    <div class="desktop-item-text">
-                        <h3>Ceramic Coating</h3>
-                        <p>At MrGloss Ceramic Coating, we elevate car care with our advanced ceramic coating solution. This protective layer not only enhances your vehicle's appearance but also shields it from environmental damage, UV rays, and minor scratches. With our ceramic coating, your car will maintain its showroom shine for longer, requiring minimal maintenance. Experience the difference with MrGloss Ceramic Coating and enjoy a car that turns heads wherever you go.</p>
-                        <a href=""><button>Know More</button></a>
-                    </div>
-                    
-                </div>
-               
-
-                <div class="desktop-carousel-item">
-                    <div class="desktop-image-container">
-                        <img src="https://i.ibb.co/gyjM2ZN/2.png">
-                    </div>
-                    <div class="desktop-item-text">
-                        <h3>Car Wash & Detailing</h3>
-                        <p>Our skilled team uses the best products and techniques to give your car a thorough, gentle clean. We offer a full range of services, from exterior washes that bring back your car's shine to detailed interior cleaning. With MrGloss, your car will look great and be protected from environmental damage. Trust MrGloss Car Wash & Detailing for the best in car care, where your satisfaction comes first.</p>
-                        <a href=""><button>Know More</button></a>
-                    </div>
-                    
-                </div>
-
-                <div class="desktop-carousel-item">
-                    <div class="desktop-image-container">
-                        <img src="https://i.ibb.co/jD9Vnxg/3.png">
-                    </div>
-                    <div class="desktop-item-text">
-                        <h3>Scratch Removal & Painting</h3>
-                        <p>Experience our comprehensive car painting and scratch removal services at MrGloss . Our team restores your vehicle's shine with precise scratch and dent repair, ensuring every imperfection is meticulously addressed. Whether you require scratch removal or a fresh coat of paint, trust MrGloss to enhance your car's appearance and protect its value. Enjoy professional care and exceptional results with us, where your satisfaction is always our top priority.</p>
-                        <a href=""><button>Know More</button></a>
-                    </div>
-                    
-                </div>
-
-                <div class="desktop-carousel-item">
-                    <div class="desktop-image-container">
-                        <img src="https://i.ibb.co/T0VpGqT/1.png">
-                    </div>
-                    <div class="desktop-item-text">
-                        <h3>Paint Protection Film (PPF)</h3>
-                        <p>At MrGloss , we specialize in premium Paint Protection Film (PPF) services using top branded films for durability and clarity. Our skilled technicians ensure precise installation to protect your car from chips, scratches, and environmental damage, preserving its value and appearance with unmatched care.</p>
-                        <a href=""><button>Know More</button></a>
-                    </div>
-                    
-                </div>
-                
+    
     
             </div>         
         </div>
-
-
-    </div>
-   
     
-</section>
-
-<section id="why-us">
-    <h1 style="color: white;">Why Us ?</h1>
-
-    <div class="desktop-why-container">
-        <div class="desktop-why-box">
-            <div class="desktop-why-box-content">
-                <img src="https://cdn-icons-png.flaticon.com/512/3048/3048316.png" class="why-img">
-                <h2 class="why-heading">Best In-Class Equipment</h2>
-                <p class="why-content">At MrGloss, we rely on the best detailing equipment to deliver exceptional results. Our top-notch tools and machinery are carefully chosen for their effectiveness, guaranteeing a flawless finish every time. Trust us to take care of your car with the finest equipment in the business.</p>
-            </div>  
-        </div>
-
-        <div class="desktop-why-box">
-            <div class="desktop-why-box-content">
-                <img src="https://png.pngtree.com/png-vector/20230310/ourmid/pngtree-cleaning-products-line-icon-vector-png-image_6642490.png">
-                <h2 class="why-heading">Premium Products</h2>
-                <p class="why-content">At MrGloss, quality is our top priority. That's why we've chosen premium detailing products from trusted brands like 3M. With these superior products, your car will receive the care it deserves, ensuring a stunning finish that lasts.</p>
-            </div>  
-        </div>
-
-        <div class="desktop-why-box">
-            <div class="desktop-why-box-content">
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkvUr_LHCmMJzElwROMP6LnTPgJR-pirTK4PFKGkP5ajgxZgL7" class="why-img">
-                <h2 class="why-heading">Fully-Equipped Studio</h2>
-                <p class="why-content">Our fully equipped studio ensures meticulous attention to detail for all your car care needs. With cutting-edge tools and technology, we deliver top-quality results every time, giving your vehicle the care it deserves.</p>
-            </div>  
-        </div>
-
-        <div class="desktop-why-box">
-            <div class="desktop-why-box-content">
-                <img src="https://t3.ftcdn.net/jpg/04/91/46/26/360_F_491462695_JgY0OD8nIiFib40OSgmMDDcA1rLNMgc2.jpg">
-                <h2 class="why-heading">Quality-Driven Process</h2>
-                <p class="why-content">At MrGloss Ceramic Coating, punctuality is key. We meticulously plan every job, offering accurate time estimates and consistent updates to our valued customers for smooth coordination. Our rigorous processes guarantee dependable and quality-focused car care services.</p>
-            </div>  
-        </div>
-
-        
-
-    </div>
-
-
-    <div class="mobile-why-container">
-        <div class="why-box-1">
-            <div class="why-box-content">
-                <img src="https://cdn-icons-png.flaticon.com/512/3048/3048316.png" class="why-img">
-                <h2 class="why-heading">Best In-Class Equipment</h2>
-                <p class="why-content">At MrGloss, we rely on the best detailing equipment to deliver exceptional results. Our top-notch tools and machinery are carefully chosen for their effectiveness, guaranteeing a flawless finish every time. Trust us to take care of your car with the finest equipment in the business.</p>
-            </div>  
-        </div>
-
-        <div class="why-box-2">
-            <div class="why-box-content">
-                <img src="https://png.pngtree.com/png-vector/20230310/ourmid/pngtree-cleaning-products-line-icon-vector-png-image_6642490.png">
-                <h2 class="why-heading">Premium Products</h2>
-                <p class="why-content">At MrGloss, quality is our top priority. That's why we've chosen premium detailing products from trusted brands like 3M. With these superior products, your car will receive the care it deserves, ensuring a stunning finish that lasts.</p>
-            </div>  
-        </div>
-
-        <div class="why-box-3">
-            <div class="why-box-content">
-                <img src="https://png.pngtree.com/png-vector/20230306/ourmid/pngtree-workflow-line-icon-vector-png-image_6634104.png">
-                <h2 class="why-heading">Quality-Driven Process</h2>
-                <p class="why-content">At MrGloss Ceramic Coating, punctuality is key. We meticulously plan every job, offering accurate time estimates and consistent updates to our valued customers for smooth coordination. Our rigorous processes guarantee dependable and quality-focused car care services.</p>
-            </div>  
-        </div>
-
-        <div class="why-box-4">
-            <div class="why-box-content">
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkvUr_LHCmMJzElwROMP6LnTPgJR-pirTK4PFKGkP5ajgxZgL7" class="why-img">
-                <h2 class="why-heading">Fully-Equipped Studio</h2>
-                <p class="why-content">Our fully equipped studio ensures meticulous attention to detail for all your car care needs. With cutting-edge tools and technology, we deliver top-quality results every time, giving your vehicle the care it deserves.</p>
-            </div>  
-        </div>
-
-    </div>
-
-
-    
-
-</section>
-
-
-<section id="products">
-
-    <div class="content-box" id="product-box">
-        <div class="service-headline">
-            <h1>High Quality</h1>
-            <h1 class="underline"><span id="underline">Products</span></h1>
-        </div>
-    </div>
-    
-
-    <div class="products-image-carousel">
-        <div class="carousel-container">
-
-            <div class="carousel-item">
-                <div class="image" style="background: url('https://i.ibb.co/58bhBkM/Untitled-design-11.png') no-repeat;">
-                </div>
-                <div class="item-text">
-                    <p class="product-text">3M Ceramic Coating is a premium product that provides superior protection and shine for your vehicle. Its advanced formula creates a durable, high-gloss layer, shielding your car from contaminants, UV rays, and wear. This coating enhances your car's appearance and makes cleaning easier, ensuring a long-lasting, showroom-quality finish.</p>
-                </div>
+        <div class="desktop-service-box" id="service-box">
+            <div class="desktop-service-headline">
+                <h1>High Quality</h1>
+                <h1 class="underline"><span id="underline">Products</span></h1>
             </div>
-            <a href=""><button>Know More</button></a>
-
-            <div class="carousel-item">
-                <div class="image" style="background: url('https://i.ibb.co/58bhBkM/Untitled-design-11.png') no-repeat;">
-                </div>
-                <div class="item-text">
-                    <p class="product-text">3M Ceramic Coating is a premium product that provides superior protection and shine for your vehicle. Its advanced formula creates a durable, high-gloss layer, shielding your car from contaminants, UV rays, and wear. This coating enhances your car's appearance and makes cleaning easier, ensuring a long-lasting, showroom-quality finish.</p>
-                </div>
-            </div>
-            <a href=""><button>Know More</button></a>
-
-        </div>         
-    </div>
-
-    <div class="desktop-service-box" id="service-box">
-        <div class="desktop-service-headline">
-            <h1>High Quality</h1>
-            <h1 class="underline"><span id="underline">Products</span></h1>
-        </div>
-        
-        <div class="desktop-image-carousel">
-            <div class="desktop-carousel-container">
-
-                <div class="desktop-carousel-item">
-                    <div class="desktop-image-container">
-                        <img src="https://i.ibb.co/T0VpGqT/1.png">
+            
+            <div class="desktop-image-carousel">
+                <div class="desktop-carousel-container">
+    
+                    <div class="desktop-carousel-item">
+                        <div class="desktop-image-container">
+                            <img src="https://i.ibb.co/9snxzDW/Untitled-design-28.png">
+                        </div>
+                        
+                        <div class="desktop-item-text">
+                            <h3>Graphene Coating</h3>
+                            <p>Graphene Coating is a premium product that offers superior protection and shine for your vehicle. Its advanced formula creates a durable, high-gloss layer, shielding your car from contaminants, UV rays, and wear. This coating enhances your car's appearance and makes cleaning easier, ensuring a long-lasting, showroom-quality finish.</p>
+                            <a href=""><button>Know More</button></a>
+                        </div>
+                        
                     </div>
-                    <div class="desktop-item-text">
-                        <h3>Ceramic Coating</h3>
-                        <p>At MrGloss Ceramic Coating, we elevate car care with our advanced ceramic coating solution. This protective layer not only enhances your vehicle's appearance but also shields it from environmental damage, UV rays, and minor scratches. With our ceramic coating, your car will maintain its showroom shine for longer, requiring minimal maintenance. Experience the difference with MrGloss Ceramic Coating and enjoy a car that turns heads wherever you go.</p>
-                        <a href=""><button>Know More</button></a>
+    
+                    <div class="desktop-carousel-item">
+                        <div class="desktop-image-container">
+                            <img src="https://i.ibb.co/d5Q4Vhk/Untitled-design-20.png">
+                        </div>
+                        <div class="desktop-item-text">
+                            <h3>3M Ceramic Coating </h3>
+                            <p>3M Ceramic Coating is a premium product that provides superior protection and shine for your vehicle. Its advanced formula creates a durable, high-gloss layer, shielding your car from contaminants, UV rays, and wear. This coating enhances your car's appearance and makes cleaning easier, ensuring a long-lasting, showroom-quality finish.</p>
+                            <a href=""><button>Know More</button></a>
+                        </div>
+                        
                     </div>
+                   
+    
                     
-                </div>
-               
-
-                <div class="desktop-carousel-item">
-                    <div class="desktop-image-container">
-                        <img src="https://i.ibb.co/T0VpGqT/1.png">
-                    </div>
-                    <div class="desktop-item-text">
-                        <h3>Ceramic Coating 2</h3>
-                        <p>At MrGloss Ceramic Coating, we elevate car care with our advanced ceramic coating solution. This protective layer not only enhances your vehicle's appearance but also shields it from environmental damage, UV rays, and minor scratches. With our ceramic coating, your car will maintain its showroom shine for longer, requiring minimal maintenance. Experience the difference with MrGloss Ceramic Coating and enjoy a car that turns heads wherever you go.</p>
-                        <a href=""><button>Know More</button></a>
-                    </div>
                     
-                </div>
-                
-    
-            </div>         
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<section id="footer">
-    <div class="desktop-footer">
-        <div class="desktop-footer-content-top">
-            <img src="https://fplogoimages.withfloats.com/actual/63a9726988733e0001ed61d0.jpg"> 
-            <p>231, 2, 4th Main Rd, Nolambur, Ambattur Industrial Estate, Chennai, 
-            Tamil Nadu 600095</p>
-            
-            <div class="desktop-footer-info-top">
-                <a href=""><button id="white">View Location</button></a>
-                <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
-                <h4>CALL US@</h4>
-                <h3 >+91 080 4803 8653</h3>
-            </div>
-            
-        </div>
-    
-        <div class="desktop-footer-content-bottom">
-            <h2>LINKS</h2>
-            <div class="desktop-sitemap">
-                <a href="">Home</a>
-                <a href="">Products</a>
-                <a href="">Services</a>
-                <a href="">Franchise</a>
-                <a href="">Gallery</a>
-                <a href="">Contact</a>
-            </div>
-    
-            <h2 class="socials">SOCIALS</h2>
-            <div class="desktop-footer-icons">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-regular fa-envelope"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-            </div>   
-            
-        </div>
-    </div>
-
-    <div class="mobile-footer">
-        <div class="footer-content-top">
-            <img src="https://fplogoimages.withfloats.com/actual/63a9726988733e0001ed61d0.jpg"> 
-            <p>231, 2, 4th Main Rd, Nolambur, Ambattur Industrial Estate, Chennai, 
-            Tamil Nadu 600095</p>
-    
-            <a href=""><button id="white">View Location</button></a>
-    
-            <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
-            <h4>CALL US@</h4>
-            <h3 >+91 080 4803 8653</h3>
-        </div>
-    
-        <div class="footer-content-bottom">
-            <h2>LINKS</h2>
-            <div class="sitemap">
-                <a href="">Home</a>
-                <a href="">Products</a>
-                <a href="">Services</a>
-                <a href="">Franchise</a>
-                <a href="">Gallery</a>
-                <a href="">Contact</a>
-            </div>
-    
-            <h2 class="socials">SOCIALS</h2>
-            <div class="footer-icons-mobile">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-regular fa-envelope"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-            </div>   
-            
-        </div>
         
-    </div>
+                </div>         
+            </div>
+    
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    {% include 'base/footer.html' %}
+    
+</body>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var images = document.querySelectorAll('#headline-image-carousel img');
+        var currentIndex = 0;
 
-    
-    
-    
-</section>
+        // Function to add active class to current image and remove from others
+        function showImage(index) {
+            images.forEach(function(img, idx) {
+                if (idx === index) {
+                    img.classList.add('active');
+                } else {
+                    img.classList.remove('active');
+                }
+            });
+        }
+
+        function swapImage() {
+            showImage(currentIndex);
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        setInterval(swapImage, 3000);  // Swap image every 3 seconds
+
+        // Initial call to show the first image
+        showImage(currentIndex);
+    });
+
+</script>
+
 
 
 

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vu)+&=(2)uf_+&3=1r&1gn1h(i85!!*(l_-ix5-%s$$*^vvi4!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.0.108"]
+ALLOWED_HOSTS = ["13.49.230.163","127.0.0.1","192.168.0.108" ,"mrglossceramic-website.onrender.com","192.168.56.1"]
 
 
 # Application definition
@@ -117,6 +117,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+MEDIA_ROOT = 'images/'
+
+MEDIA_URL = '/content/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
