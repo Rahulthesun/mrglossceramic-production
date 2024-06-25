@@ -1,0 +1,14 @@
+{% extends 'base/main.html' %}
+
+{% block content %}
+    <section id="content">
+        <form method="post" style="text-align: center;">
+            {% csrf_token %}
+    
+            <p>Are you sure you want to Delete This Image/Video ?</p>
+            <input type="submit" value="Confirm">
+        </form>
+    </section>
+    
+
+{% endblock %}

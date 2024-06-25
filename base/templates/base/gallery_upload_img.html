@@ -8,17 +8,24 @@
             <div class="gallery-heading">
                 <a href="{% url 'upload_gallery_image' %}" id="upload">Upload Image To Gallery</a>
                 <h1>Gallery</h1>
+                <h2>Ideal-Size : 500px X 450px</h2>
             </div>
             <div class="gallery-type">
                 <a href="#" class="active">Images</a>
                 <a href="{% url 'gallery_content_video' %}">Video</a>
             </div>
+            <p>Click on images to delete them</p>
             <div class="gallery-content-grid">
                 {% for i in images %}
-                <div class="gallery-image">
-                    <img src="{{i.image.url}}">
-                </div>
 
+                <a href="{% url 'delete_gallery_img' i.id %}">
+                    <div class="gallery-image">
+                        <img src="{{i.image.url}}">
+                    </div>
+                </a>
+                
+                
+                
                 {% empty %}
                     <p>No Images Uploaded To Gallery</p>
                 {% endfor %}

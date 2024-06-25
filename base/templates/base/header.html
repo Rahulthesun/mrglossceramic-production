@@ -8,13 +8,13 @@
         <h2>+91 9677146666</h2>
         <div class="mobile-icons">
             <a href="https://www.facebook.com/profile.php?id=100087649274115" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://wa.me/919677146666" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.instagram.com/mrglossceramiccoating/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            <a href="mailto:mr.glossceramiccoating@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
             <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </div>
         <div class="topbar-links">
-            <a href=""><p>Book Service</p></a>
+            <a href="{% url 'contact' %}"><p>Book Service</p></a>
             <a href="{% url 'franchise' %}"><p>Apply For Franchise</p></a>     
         </div>
     </div>
@@ -25,13 +25,13 @@
         </div>
         <div class="desktop-icons">
             <a href="https://www.facebook.com/profile.php?id=100087649274115" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://wa.me/919677146666" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.instagram.com/mrglossceramiccoating/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            <a href="mailto:mr.glossceramiccoating@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
             <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </div>
         <div class="desktop-topbar-links">
-            <a href=""><p>Book Service</p></a>
+            <a href="{% url 'contact' %}"><p>Book Service</p></a>
             <a href="{% url 'franchise' %}"><p>Apply For Franchise</p></a>     
         </div>
     </div>
@@ -56,7 +56,7 @@
                 <li><a href="{% url 'home' %}#services">Services</a></li>
                 <li><a href="{% url 'franchise' %}">Franchise</a></li>
                 <li><a href="{% url 'image_gallery' %}">Gallery</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
               </ul>
             </nav>        
     </div>
@@ -73,7 +73,7 @@
         <a href="{% url 'home' %}#services">Services</a>
         <a href="{% url 'franchise' %}">Franchise</a>
         <a href="{% url 'image_gallery' %}">Gallery</a>
-        <a href="">Contact</a>
+        <a href="{% url 'contact' %}">Contact</a>
        </div>
         
         

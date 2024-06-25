@@ -48,7 +48,24 @@
     />
     <meta name="twitter:site" content="@MrGloss" />
 
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://i.ibb.co/F4KqmVt/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://i.ibb.co/MVg0KGR/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://i.ibb.co/Vx7KMzX/favicon-16x16.png"
+    />
+
     <script src="scripts.js" defer></script>
 
     <script
@@ -644,7 +661,7 @@
 
     .franchise-content-box h2 {
       font-size: 45px;
-      line-height: 55px; 
+      line-height: 55px;
       text-align: left;
       margin-bottom: 20px;
     }
@@ -715,7 +732,8 @@
       margin: 10px auto;
     }
 
-    .gallery-heading h1 , .upload-form h1 {
+    .gallery-heading h1,
+    .upload-form h1 {
       font-weight: 800;
       font-size: 80px;
       line-height: 40px;
@@ -729,7 +747,8 @@
       text-align: center;
     }
 
-    .gallery-content-grid ,.gallery-video-content-grid{
+    .gallery-content-grid,
+    .gallery-video-content-grid {
       width: 100%;
       margin: 20px auto;
       display: grid;
@@ -779,13 +798,13 @@
     }
 
     .active {
-        color: white;
-        background-color: black;
+      color: white;
+      background-color: black;
     }
-    
-    a#upload  {
+
+    a#upload {
       font-size: 25px;
-      color : purple;
+      color: purple;
       text-decoration-line: underline;
     }
 
@@ -793,6 +812,12 @@
       width: 90%;
       margin: 10px auto;
       height: 100vh;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .upload-form input {
+      font-size: 20px;
       text-align: center;
     }
 
@@ -810,6 +835,53 @@
     .mobile-franchise-image-carousel,
     .mobile-drawer {
       display: none;
+    }
+
+    #contact {
+      background-color: white;
+      text-align: center;
+      padding: 50px 0px;
+    }
+
+    .contact-div h1,
+    .contact-div h3,
+    .contact-div p {
+      font-weight: 800;
+      font-size: 80px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: -0.05em;
+    }
+
+    .contact-div h1 {
+      margin-bottom: 100px;
+    }
+
+    .contact-div h3 {
+      font-weight: 500;
+      font-size: 40px;
+    }
+
+    .contact-div p {
+      font-weight: 800;
+      font-size: 30px;
+      letter-spacing: 0em;
+    }
+
+    button#whatsapp {
+      color: white;
+      background-color: #068e3f;
+    }
+
+    button#whatsapp:hover {
+      color: black;
+      background-color: white;
+    }
+
+    a#delete {
+      position: relative;
+      bottom: 10px;
+      left: 0px;
     }
 
     @media screen and (max-width: 700px) {
@@ -842,13 +914,65 @@
       .desktop-image-carousel,
       .desktop-footer,
       .desktop-why-container,
-      .franchise-content-box {
+      .franchise-content-box,
+      .desktop-franchise-image-carousel {
         display: none;
       }
 
+      .content-upload {
+        margin: 50px auto;
+        width: 95%;
+      }
+
+      .gallery-div {
+        width: 90%;
+      }
+
+      .gallery-content-grid,
+      .gallery-video-content-grid {
+        gap: 5px;
+      }
+
+      .gallery-video-content-grid {
+        grid-template-columns: auto;
+      }
+      .gallery-video-content-grid video {
+        width: 95%;
+        height: 100%;
+        margin: 0px auto;
+      }
+
+      .gallery-image {
+        height: 150px;
+      }
+
+      .contact-div h1 {
+        font-size: 55px;
+        line-height: 20px;
+      }
+
+      .contact-div h3 {
+        font-size: 40px;
+        line-height: 20px;
+      }
+
+      .contact-div p#email {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .contact-div p {
+        font-size: 30px;
+        line-height: 20px;
+      }
+
       #aim {
-        width: 85%;
+        width: 100%;
         padding: 10% 0px;
+      }
+
+      .aim-mobile-headline {
+        width: 85%;
+        margin: auto auto;
       }
 
       .mobile-topbar h1,
@@ -932,6 +1056,10 @@
         margin: 20px auto;
       }
 
+      .aim-mobile-content {
+        width: 100%;
+      }
+
       #service-box,
       #product-box {
         width: 100%;
@@ -953,7 +1081,7 @@
       }
 
       .aim-mobile-content p {
-        width: 100%;
+        width: 90%;
       }
 
       .aim-mobile-content h3 {

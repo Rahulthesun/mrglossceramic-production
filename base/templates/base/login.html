@@ -1,0 +1,21 @@
+{% extends 'base/main.html' %}
+
+{% block content %}
+
+<section id="content">
+    <div class="content-upload">
+        {%for message in messages%}
+        <p>message</p>
+        {% endfor %}
+    <form method="post">
+        <h1>Login</h1>
+        
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Login">
+    </form>
+    </div>
+    
+</section>
+
+{% endblock %}

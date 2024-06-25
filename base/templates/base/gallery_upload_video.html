@@ -15,13 +15,18 @@
                 <a href="#" class="active">Video</a>
             </div>
             
+            <p>Click on Videos to Delete Them</p>
 
             <div class="gallery-video-content-grid">
                 {% for i in videos %}
 
-                <video width="auto" height="100%" controls>
+                <a href="{% url 'delete_gallery_video' i.id %}">
+                    <video width="auto" height="100%" controls>
                         <source src="{{i.video.url}}" type="video/mp4">
                 </video>
+                </a>
+                
+                
                 
 
                 {% empty %}

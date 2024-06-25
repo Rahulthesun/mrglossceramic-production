@@ -6,6 +6,7 @@
         <div class="content-upload">
             <div class="content-title">
                 <h1>Gallery Content Upload</h1>
+                <p>Ideal Size: 500px X 450px</p>
             </div>
             <hr>
             <a href="{% url 'gallery_content_image' %}" id="upload">Upload images to Gallery</a>
@@ -26,7 +27,7 @@
             <div class="image-div">
                 <img src="{{i.image.url}}" alt="headline-image">
                 <p>Uploaded - {{i.created |date:"M d, Y" }}</p>
-                <a href=""><i class="fa-solid fa-trash"></i></a>
+                <a href="{% url 'delete_headline_img' i.id %}"><i class="fa-solid fa-trash"></i></a>
             </div>
             <hr>
             {% endfor %}

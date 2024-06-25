@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vu)+&=(2)uf_+&3=1r&1gn1h(i85!!*(l_-ix5-%s$$*^vvi4!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["mrglossceramiccoating.com" , "www.mrglossceramiccoating.com","16.171.52.22","127.0.0.1","192.168.0.108" ,"mrglossceramic-website.onrender.com","192.168.56.1"]
+ALLOWED_HOSTS = ["mrglossceramiccoating.com" , "www.mrglossceramiccoating.com","16.171.52.22","127.0.0.1","192.168.0.108","192.168.0.103","mrglossceramic-website.onrender.com","192.168.56.1"]
 
 
 # Application definition
@@ -126,3 +126,6 @@ MEDIA_URL = '/content/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+LOGIN_URL = '/login/'
