@@ -123,6 +123,11 @@
       color: white;
     }
 
+    #topbar {
+      margin: 0px;
+      padding: 0px;
+    }
+
     #aim,
     #why-us {
       text-align: left;
@@ -276,7 +281,7 @@
     .desktop-headline-image-carousel,
     .desktop-franchise-image-carousel {
       width: 100%;
-      height: 500px;
+      height: 1000px;
       overflow-y: hidden;
     }
 
@@ -884,6 +889,40 @@
       left: 0px;
     }
 
+    .offer {
+      margin-top: 0px;
+      background-color: #ff0000;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      color: rgb(255, 255, 255);
+      padding: 0px 0px;
+      text-align: center;
+    }
+
+    .offer:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .offer p {
+      font-family: "Poppins", sans-serif;
+      line-height: 0px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    #blink {
+      animation: blink-animation 1s steps(2, start) infinite;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+
     @media screen and (max-width: 700px) {
       .image-div {
         width: 90%;
@@ -1187,7 +1226,7 @@
       .desktop-headline-image-carousel,
       .mobile-franchise-image-carousel {
         width: 100%;
-        height: 200px;
+        height: 400px;
         overflow-y: hidden;
         margin-bottom: 20px;
       }
@@ -1314,11 +1353,8 @@
         height: auto;
       }
 
-
-
       #footer i {
         font-size: 30px;
-        
       }
 
       #footer h3 {
