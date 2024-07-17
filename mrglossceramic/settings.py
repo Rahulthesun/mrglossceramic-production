@@ -122,6 +122,7 @@ MEDIA_ROOT = 'images/'
 
 MEDIA_URL = '/content/'
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -129,3 +130,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 LOGIN_URL = '/login/'
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 20971520  # 20MB
